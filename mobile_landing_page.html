@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DSAI Program | Module 5 &amp; 6 Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#dcd9d9",
+                        "inverse-primary": "#ffb3b5",
+                        "primary": "#ad002f",
+                        "primary-fixed-dim": "#ffb3b5",
+                        "secondary": "#565a8e",
+                        "surface-container": "#f0eded",
+                        "on-background": "#1b1c1c",
+                        "background": "#fcf9f8",
+                        "tertiary": "#006059",
+                        "secondary-fixed": "#e0e0ff",
+                        "on-secondary-fixed-variant": "#3e4275",
+                        "tertiary-container": "#007b72",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-primary-fixed": "#40000b",
+                        "on-primary-container": "#ffecec",
+                        "on-surface-variant": "#5c3f40",
+                        "outline": "#906f6f",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-bright": "#fcf9f8",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#be0035",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e5e2e1",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#96f3e7",
+                        "secondary-container": "#bec2fd",
+                        "tertiary-fixed-dim": "#79d6cb",
+                        "on-surface": "#1b1c1c",
+                        "data-accent": "#005EB8",
+                        "on-tertiary-container": "#b3fff5",
+                        "error": "#ba1a1a",
+                        "surface-subtle": "#F4F6F9",
+                        "primary-container": "#d71440",
+                        "on-tertiary-fixed": "#00201d",
+                        "primary-fixed": "#ffdada",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary-container": "#4a4e81",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#121547",
+                        "surface-white": "#FFFFFF",
+                        "on-tertiary-fixed-variant": "#00504a",
+                        "outline-variant": "#e5bdbd",
+                        "secondary-fixed-dim": "#bec2fd",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#920026",
+                        "surface": "#fcf9f8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "max-width": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-xl": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-xl-mobile": ["Hanken Grotesk"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid #E1E4E8;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e5bdbd;
+        }
+        .mono { font-family: 'Courier New', Courier, monospace; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-surface-white border-b border-outline-variant">
+<div class="max-w-max-width mx-auto flex items-center justify-between px-margin-mobile h-16">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">DSAI Program</span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-md hover:bg-primary-container transition-colors shadow-sm">
+                Apply Now
+            </button>
+</div>
+</header>
+<main class="max-w-max-width mx-auto">
+<!-- Hero Section -->
+<section class="px-margin-mobile py-12 bg-surface-container-lowest">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full">
+<span class="font-label-md">SCTP · DSAI Program · Roadmap v1.0</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-background">
+                    Module 5 &amp; 6 — <span class="text-primary">Generative AI</span> &amp; Full Stack AI Applications
+                </h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl">
+                    A 15-step path from responsible AI fundamentals to a multi-agent full-stack capstone. Each building block is taught, then shipped as a deployment.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="flex-1 min-w-[140px] p-4 border border-outline-variant rounded-lg bg-surface-white">
+<p class="font-label-md text-secondary uppercase">Module 5</p>
+<p class="font-headline-md text-on-surface">15 hrs</p>
+<p class="font-body-sm text-on-surface-variant">Gen AI foundations</p>
+</div>
+<div class="flex-1 min-w-[140px] p-4 border border-outline-variant rounded-lg bg-surface-white">
+<p class="font-label-md text-secondary uppercase">Module 6</p>
+<p class="font-headline-md text-on-surface">30 hrs</p>
+<p class="font-body-sm text-on-surface-variant">Full Stack AI</p>
+</div>
+</div>
+</div>
+<div class="mt-8 relative overflow-hidden rounded-xl h-64 border border-outline-variant">
+<img alt="Generative AI Neural Network Visualization" class="w-full h-full object-cover" data-alt="A sophisticated digital visualization of a neural network with glowing nodes and interconnecting data pathways. The scene is rendered in a high-tech corporate aesthetic with a palette of deep reds, charcoal grays, and crisp whites. Soft ambient light illuminates the geometric complexity, suggesting advanced computational power and the structured logic of artificial intelligence. The mood is professional, innovative, and focused on cutting-edge academic excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBblGFIodqK0WSZ6wZAN1Q2I72raZvcmj9vAFxscMxFDSntBsgBhSkgxt5qMgRHtkjJVZZfyjJk078FDjqj9mGbRzflXci_kOAt9MDqmRKeLSICdNpyt3slHvTxMiuPZMDmfqY334UIuP-nJApca-a2KI8oCi5349QZPUQm6IeyuoH0S1__71OvXJMvruz8xNMS7HaDehKtuXVyUSkXXTgKiR8zMpJG-iG1BfoZRYY9FXq15SQjP-OWsYFcYv0JuctiXNr2T3i0dMYm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+<span class="text-white font-label-md opacity-80 uppercase tracking-widest">Digital Craftsmanship</span>
+<h2 class="text-white font-headline-md">Building the Future, Topic by Topic</h2>
+</div>
+</div>
+</section>
+<!-- What You'll Ship (Deployment Milestones) -->
+<section class="px-margin-mobile py-16 bg-surface-white">
+<div class="mb-8">
+<p class="font-label-md text-primary font-bold uppercase tracking-widest">Portfolio &amp; Labs</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">What You'll Ship</h2>
+<p class="font-body-md text-on-surface-variant">Five working artifacts — one per deployment milestone.</p>
+</div>
+<div class="space-y-4">
+<!-- Milestone Card 1 -->
+<div class="flex gap-4 p-4 rounded-xl border border-outline-variant hover:border-primary transition-all group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-md text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        01
+                    </div>
+<div>
+<h3 class="font-headline-md text-on-surface">Single-turn AI App</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Foundational interaction pattern with Large Language Models.</p>
+</div>
+</div>
+<!-- Milestone Card 2 -->
+<div class="flex gap-4 p-4 rounded-xl border border-outline-variant hover:border-primary transition-all group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-md text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        02
+                    </div>
+<div>
+<h3 class="font-headline-md text-on-surface">Website with Enhanced UX</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Deploying a production-ready interface for your AI logic.</p>
+</div>
+</div>
+<!-- Milestone Card 3 -->
+<div class="flex gap-4 p-4 rounded-xl border border-outline-variant hover:border-primary transition-all group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-md text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        03
+                    </div>
+<div>
+<h3 class="font-headline-md text-on-surface">Agentic RAG System</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Advanced Retrieval-Augmented Generation for grounded data.</p>
+</div>
+</div>
+<!-- Milestone Card 4 -->
+<div class="flex gap-4 p-4 rounded-xl border border-outline-variant hover:border-primary transition-all group">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-headline-md text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        04
+                    </div>
+<div>
+<h3 class="font-headline-md text-on-surface">Workflow Automation</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Multi-step autonomous loops and functional chat bots.</p>
+</div>
+</div>
+<!-- Milestone Card 5 -->
+<div class="flex gap-4 p-4 rounded-xl border border-outline-variant hover:border-primary transition-all group bg-surface-container-low border-primary">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary flex items-center justify-center font-headline-md text-on-primary">
+                        05
+                    </div>
+<div>
+<h3 class="font-headline-md text-on-surface">Multi-Agent Orchestration</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Capstone: Autonomous agents collaborating on complex tasks.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Curriculum Breakdown -->
+<section class="px-margin-mobile py-16 bg-surface-subtle">
+<div class="mb-12">
+<p class="font-label-md text-secondary font-bold uppercase tracking-widest">Course Overview</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The Learning Path</h2>
+<p class="font-body-md text-on-surface-variant">15 topics across two modules, designed for rapid technical mastery.</p>
+</div>
+<!-- Module 5 Timeline -->
+<div class="relative pl-12 space-y-12">
+<div class="timeline-line"></div>
+<div class="relative">
+<div class="absolute -left-[52px] w-10 h-10 bg-primary rounded-full flex items-center justify-center z-10 border-4 border-surface-subtle">
+<span class="material-symbols-outlined text-white text-sm" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4">Module 5 · Generative AI</h3>
+<div class="space-y-6">
+<div class="bg-surface-white p-5 rounded-lg border border-outline-variant shadow-sm">
+<span class="font-label-md text-secondary mono">TOPIC 01-02</span>
+<h4 class="font-headline-md mt-1">Responsible AI &amp; LLMs</h4>
+<p class="font-body-sm text-on-surface-variant mt-2">Fundamentals of ethics, safety, and the internal mechanics of large language models.</p>
+</div>
+<div class="bg-surface-white p-5 rounded-lg border border-outline-variant shadow-sm">
+<span class="font-label-md text-secondary mono">TOPIC 03-04</span>
+<h4 class="font-headline-md mt-1">Prompt &amp; Context Engineering</h4>
+<p class="font-body-sm text-on-surface-variant mt-2">Designing robust prompts and shaping the input window for reliable outputs.</p>
+</div>
+<div class="bg-surface-white p-5 rounded-lg border border-outline-variant shadow-sm">
+<span class="font-label-md text-secondary mono">TOPIC 05-07</span>
+<h4 class="font-headline-md mt-1">Prototyping &amp; First Builds</h4>
+<p class="font-body-sm text-on-surface-variant mt-2">No-code rapid builds leading to your first Full Stack Single-Turn app.</p>
+<div class="mt-4 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="deployed_code" data-weight="fill">deployed_code</span>
+<span class="font-label-md font-bold">Deployment 1 Capstone Sprint</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Module 6 Timeline -->
+<div class="relative">
+<div class="absolute -left-[52px] w-10 h-10 bg-secondary rounded-full flex items-center justify-center z-10 border-4 border-surface-subtle">
+<span class="material-symbols-outlined text-white text-sm" data-icon="layers">layers</span>
+</div>
+<h3 class="font-headline-md text-secondary mb-4">Module 6 · Full Stack AI</h3>
+<div class="space-y-6">
+<div class="bg-surface-white p-5 rounded-lg border border-outline-variant shadow-sm">
+<span class="font-label-md text-secondary mono">TOPIC 08-09</span>
+<h4 class="font-headline-md mt-1">Agents &amp; UX Design</h4>
+<p class="font-body-sm text-on-surface-variant mt-2">Moving from simple prompts to autonomous tools with polished web interfaces.</p>
+<div class="mt-4 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="deployed_code" data-weight="fill">deployed_code</span>
+<span class="font-label-md font-bold">Deployment 2 Capstone Sprint</span>
+</div>
+</div>
+<div class="bg-surface-white p-5 rounded-lg border border-outline-variant shadow-sm">
+<span class="font-label-md text-secondary mono">TOPIC 10-11</span>
+<h4 class="font-headline-md mt-1">Agentic RAG Engineering</h4>
+<p class="font-body-sm text-on-surface-variant mt-2">Retrieval patterns and end-to-end harness engineering for grounded AI knowledge.</p>
+<div class="mt-4 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="deployed_code" data-weight="fill">deployed_code</span>
+<span class="font-label-md font-bold">Deployment 3 Capstone Sprint</span>
+</div>
+</div>
+<div class="bg-surface-white p-5 rounded-lg border border-outline-variant shadow-sm">
+<span class="font-label-md text-secondary mono">TOPIC 12-15</span>
+<h4 class="font-headline-md mt-1">Workflow &amp; Orchestration</h4>
+<p class="font-body-sm text-on-surface-variant mt-2">Automation loops, Agile shipping, and the Multi-Agent capstone project.</p>
+<div class="mt-4 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm" data-icon="deployed_code" data-weight="fill">deployed_code</span>
+<span class="font-label-md font-bold">Deployment 5: Final Orchestration</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Who Should Apply / Prerequisites -->
+<section class="px-margin-mobile py-16 bg-surface-white">
+<div class="flex flex-col gap-8">
+<div class="p-8 bg-on-background text-white rounded-2xl relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-4">Who Should Apply</h2>
+<p class="font-body-lg mb-6 opacity-90">Suitable for students and working adults looking to transition into the AI development ecosystem.</p>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<div class="bg-primary p-2 rounded">
+<span class="material-symbols-outlined text-white" data-icon="code">code</span>
+</div>
+<div>
+<h4 class="font-headline-md">Prerequisite: Basic Python</h4>
+<p class="font-body-sm opacity-80 mt-1">Variables, loops, functions, classes, and built-in methods. No CS degree required.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Technical Pattern Overlay -->
+<div class="absolute right-[-20%] top-[-20%] opacity-20 rotate-12">
+<span class="material-symbols-outlined text-[300px]" data-icon="terminal">terminal</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 border border-outline-variant rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-3" data-icon="group">group</span>
+<p class="font-label-md">Global Tech Leaders</p>
+</div>
+<div class="p-6 border border-outline-variant rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-3xl mb-3" data-icon="architecture">architecture</span>
+<p class="font-label-md">System Architects</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant py-12 px-margin-mobile">
+<div class="max-w-max-width mx-auto flex flex-col gap-8">
+<div class="space-y-4">
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface">Nanyang Technological University</p>
+<div class="space-y-1">
+<p class="font-body-sm text-on-surface-variant">Program Director: <strong>Swarup Biswas</strong></p>
+<p class="font-body-sm text-on-surface-variant">Singapore · SCTP — DSAI Program</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-y-4">
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">Curriculum</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">Admissions</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">Research</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">Contact</a>
+</div>
+<div class="pt-8 border-t border-outline-variant">
+<p class="font-body-sm text-on-surface-variant">© 2024 Nanyang Technological University. All rights reserved.</p>
+<div class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="policy">policy</span>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="language">language</span>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="verified_user">verified_user</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- FAB (Suppressed on landing as per instructions for focus) -->
+</body></html>
